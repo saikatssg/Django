@@ -2,5 +2,31 @@
 {% block content %}
 
 <h1 class="display-5 fw-normal text-center text-primary my-3">Register User Portal</h1>
+<br><br>
+<div class="col-md-6 offset-md-3">
+    <form action="" method="post">
+        {% csrf_token %}
+
+        {% if form.errors %}
+
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            Your Form Has Errors:
+            {% for  field in form %}
+                {% if field.errors %}
+                    {{ field.errors }}
+                {% endif %}
+            {% endfor %}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+
+        {% endif %}
+
+        {{ form.as_p}}
+        
+        <button type="submit" class="btn btn-secondary mt-2 px-4">Register</button>
+        <button type="reset" class="btn btn-dark ms-3 mt-2 px-4">Reset</button>
+    </form>   
+    <br><br> 
+</div>
 
 {% endblock %}
