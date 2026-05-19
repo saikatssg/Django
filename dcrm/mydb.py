@@ -16,3 +16,11 @@ cursorObject.execute("CREATE DATABASE IF NOT EXISTS emp")
 print("Database connected and verified successfully!")
 
 dataBase.close()
+
+#add repository as project under git
+
+# git config --global user.name "saikatssg"
+# git config --global user.email "rccsaikat@gmail.com"
+#  git config --global push.default matching
+# git config --global alias.co checkout
+# git init

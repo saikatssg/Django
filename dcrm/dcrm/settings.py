@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/6.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-j6kiwtu*$=5rk(-c5*+gk*kko%_jd9&hmn!%*)ca3+8al=-2^c'
+SECRET_KEY = 'django-insecure-1a3gzmdct9l-_@5h@=&ntk#vgf&06ot3f)+wu0cffos(p082h='
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -76,12 +76,11 @@ WSGI_APPLICATION = 'dcrm.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'emp',
+        'NAME':  'emp',
         'USER': 'root',
-        'PASSWORD':'',
-        'HOST': '127.0.0.1',
-        'PORT':'3307'
-
+        'PASSWORD' :'',
+        'HOST' : 'localhost',
+        'PORT' : '3307',
     }
 }
 
